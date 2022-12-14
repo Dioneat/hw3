@@ -3,10 +3,23 @@
 
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+#include <stdio.h>
+int main() {
+	int a, b;
+	float div;
+	scanf_s("%d %d", &a, &b);
+	if(b != 0)
+		div = a / b;
+	else
+	{
+		printf("Divided by zero");
+		return 1;
+	}
+	printf("%d", div);
+	system("pause");
+	return 0;
 }
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
